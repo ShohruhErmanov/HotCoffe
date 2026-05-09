@@ -3,78 +3,142 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HotCoffee - Modern Coffee Website</title>
+    <title>HotCoffee Blog | Premium Coffee &amp; Writing</title>
     <!-- Google Font: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./css/all.min.css" />
     <!-- Custom Styles -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Header/Navbar Start -->
-    <header>
-      <nav class="navbar">
-        <!-- Left Section: Logo -->
-        <div class="navbar__left">
-          <a href="#" class="logo">HotCoffee</a>
+    <!-- Navbar -->
+    <header class="site-header">
+      <div class="container navbar-container">
+        <a href="#" class="logo">HotCoffee</a>
+
+        <div class="search-wrap">
+          <i class="fas fa-search search-icon"></i>
+          <input type="search" class="search-input" placeholder="Search..." aria-label="Search">
         </div>
 
-        <!-- Center Section: Search Bar -->
-        <div class="navbar__center">
-          <div class="search-bar">
-            <i class="fas fa-search search-icon"></i>
-            <input type="text" placeholder="Search..." class="search-input">
-          </div>
-        </div>
-
-        <!-- Right Section: Navigation Links and Social Icons -->
-        <div class="navbar__right">
+        <div class="navbar-actions">
           <ul class="nav-links">
             <li><a href="#">Home</a></li>
             <li><a href="#">Articles</a></li>
           </ul>
-          <ul class="social-icons">
+          <ul class="social-links">
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
             <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <!-- Header/Navbar End -->
-
-    <!-- Hero Section Start -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <!-- Left Side: Text Content -->
-          <div class="hero-text">
-            <h1 class="hero-heading">Make better coffee ☕</h1>
-            <p class="hero-subheading">why learn how to blog?</p>
-          </div>
-          <!-- Right Side: Illustration Image -->
-          <div class="hero-image">
-            <img src="./img/header.svg" alt="Modern Coffee Illustration">
-          </div>
-    </section>
-    <!-- Hero Section End -->
-
-    <!-- Blog Card Section Start -->
-    <section class="blog-card">
-      <div class="card">
-        <!-- Left Side: Text Content -->
-        <div class="card-left">
-          <p class="card-paragraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
-          <div class="card-bottom">
-            <span class="card-date">May 20th 2020</span>
-            <a href="#" class="card-read-more">Read more</a>
-          </div>
-        </div>
-        <!-- Right Side: Image -->
-        <div class="card-right">
-          <img src="./img/about.png" alt="Professional Blog Image">
-        </div>
       </div>
-    </section>
-    <!-- Blog Card Section End -->
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container hero-container">
+          <div class="hero-copy">
+            <h1>Make better coffee ☕</h1>
+            <p>why learn how to blog?</p>
+          </div>
+          <div class="hero-image-wrap">
+            <img src="./img/header.svg" alt="Modern coffee workspace illustration">
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Blog Card -->
+      <section class="featured-blog-section">
+        <div class="container featured-blog-card">
+          <div class="featured-blog-copy">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+            <div class="featured-blog-meta">
+              <span>May 20th 2020</span>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="featured-blog-image">
+            <img src="./img/about.png" alt="Featured blog workspace image">
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Cards Grid -->
+      <section class="blog-grid-section">
+        <div class="container">
+          <div class="blog-grid">
+            <article class="grid-card">
+              <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=900&q=80" alt="Blog image 1">
+              <div class="grid-card-content">
+                <h2>long established</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+                <div class="grid-card-footer">
+                  <span>May 20th 2020</span>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </article>
+            <article class="grid-card">
+              <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=900&q=80" alt="Blog image 2">
+              <div class="grid-card-content">
+                <h2>long established</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+                <div class="grid-card-footer">
+                  <span>May 20th 2020</span>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </article>
+            <article class="grid-card">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Blog image 3">
+              <div class="grid-card-content">
+                <h2>long established</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that....</p>
+                <div class="grid-card-footer">
+                  <span>May 20th 2020</span>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Large Featured Article -->
+      <section class="featured-article-section">
+        <div class="container featured-article-container">
+          <div class="featured-article-copy">
+            <h2>What is Lorem Ipsum?</h2>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution...</p>
+            <div class="featured-article-meta">
+              <span>May 20</span>
+              <a href="#">Read more</a>
+            </div>
+          </div>
+          <div class="featured-article-image">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80" alt="Large featured coding workspace image">
+          </div>
+        </div>
+
+        <div class="container see-more-wrap">
+          <a href="#" class="btn-see-more">See more <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <p class="footer-copy">hotcoffee 2020 copyright all rights reserved</p>
+        <ul class="footer-social-links">
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
