@@ -1,5 +1,157 @@
-@import url("./fonts.css");
+/* Import Google Font: Inter */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-.title{
-    font-family: "Inter";
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #f3f3f3; /* Light gray background */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px; /* Height around 90px */
+  padding: 0 80px; /* Padding left/right around 80px */
+}
+
+/* Left Section: Logo */
+.navbar__left .logo {
+  font-size: 36px; /* Font size around 36px */
+  font-weight: bold; /* Bold */
+  color: black; /* Black color */
+  text-decoration: none;
+}
+
+/* Center Section: Search Bar */
+.navbar__center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px; /* Subtle spacing */
+  font-size: 20px; /* 20x20 */
+  color: gray;
+}
+
+.search-input {
+  padding: 10px 10px 10px 40px; /* Padding for icon */
+  border: none; /* Remove default border */
+  background: transparent; /* Transparent background */
+  font-size: 16px;
+  color: black;
+  outline: none; /* Remove outline */
+}
+
+.search-input::placeholder {
+  color: gray; /* Placeholder color gray */
+}
+
+/* Right Section: Navigation Links and Social Icons */
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Gap between nav items around 30px */
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #333; /* Dark gray */
+  font-size: 18px; /* 18px */
+  font-weight: 500; /* Medium font weight */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.nav-links a:hover {
+  color: black; /* Hover: text color becomes black */
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px; /* Equal spacing */
+  list-style: none;
+}
+
+.social-icons a {
+  color: #333; /* Dark gray */
+  font-size: 20px; /* Around 20px */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.social-icons a:hover {
+  transform: scale(1.1); /* Slight scale effect */
+  color: #000; /* Darker color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { /* Tablet */
+  .navbar {
+    padding: 0 40px; /* Reduce padding */
+    flex-direction: column; /* Stack elements */
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .navbar__center {
+    order: 2;
+    margin: 20px 0;
+  }
+
+  .navbar__right {
+    order: 3;
+    gap: 20px;
+  }
+
+  .social-icons {
+    display: none; /* Hide social icons if needed */
+  }
+}
+
+@media (max-width: 480px) { /* Mobile */
+  .navbar {
+    padding: 0 20px; /* Further reduce padding */
+  }
+
+  .navbar__left .logo {
+    font-size: 28px; /* Smaller font on mobile */
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links a {
+    font-size: 16px; /* Smaller font */
+  }
 }

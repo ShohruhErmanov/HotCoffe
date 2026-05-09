@@ -1,24 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-
-    <!-- header start -->
-
-    <header class="header">
-        <div class="container">
-            <nav class="header__nav">
-                <a href="" class="header__logo">HotCoffee</a>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HotCoffee - Modern Coffee Website</title>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header/Navbar Start -->
+    <header>
+      <nav class="navbar">
+        <!-- Left Section: Logo -->
+        <div class="navbar__left">
+          <a href="#" class="logo">HotCoffee</a>
         </div>
-    </header>
 
-    <!-- header end -->
-    
-</body>
+        <!-- Center Section: Search Bar -->
+        <div class="navbar__center">
+          <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="Search..." class="search-input">
+          </div>
+        </div>
+
+        <!-- Right Section: Navigation Links and Social Icons -->
+        <div class="navbar__right">
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Articles</a></li>
+          </ul>
+          <ul class="social-icons">
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Header/Navbar End -->
+  </body>
 </html>
